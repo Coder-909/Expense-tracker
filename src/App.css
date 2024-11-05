@@ -5,16 +5,26 @@
 }
 
 body{
-	background-color:#002c7f;
+	background-color: #182439;
+}
+
+.red{
+	color:red;
+}
+
+.green{
+	color:rgb(0, 135, 0);
 }
 
 header{
-	background-image:linear-gradient(to right,rgb(27, 64, 175),rgb(4, 77, 137));
+	background-image:linear-gradient(to right,rgb(38, 39, 51),rgb(10, 19, 50));
 	height:120px;
 	color:white;
 	display:flex;
 	align-items:center;
 	justify-content: center;
+	border-bottom:4px solid rgb(0, 213, 255);
+	box-shadow: 5px 0 15px rgb(0,213,255);
 }
 
 header h1{
@@ -36,6 +46,11 @@ header ul li a{
 	display:block;
 	padding: 3vh 2vw;
 	font-size: 20px;
+	border-radius: 15px;
+}
+
+header ul li a:hover{
+	background-color: rgba(0, 204, 255, 0.196);
 }
 
 #vault{
@@ -46,11 +61,42 @@ header ul li a{
 
 #vault #left-side{
 	display:block;
-	background-color: #002260;
+	background-color: #1d3b71;
 	width:40%;
 	margin:0 6vw 0 0 ;
 	border-radius: 15px;
-	padding:5vh 8vw;
+	/* padding:5vh 8vw; */
+	transition:all 0.5s;
+}
+
+#vault #left-side:hover{
+	transform: scale(1.01);
+	box-shadow: 0 0 15px rgba(0, 213, 255, 0.422);
+}
+
+#vault #left-side h2{
+	display:block;
+	background-color: rgb(0, 213, 255);
+	border-radius: 15px 15px 0 0;
+	color:#182439;
+	padding:2vh 2vw 1vh 2vw;
+	font-size: 2.3vw;
+}
+
+#vault #left-side #total-amount{
+	padding:2vh 2vw 1vh 2vw;
+	font-size:2.3vw;
+	font-weight: 600;
+}
+
+#vault #left-side .balance-change{
+	display:flex;
+	background-color: rgb(0, 213, 255);
+	border-radius:0 0 15px 15px;
+	color:#182439;
+	font-weight: 700;
+	padding:2vh 2vw 1vh 2vw;
+	font-size: 1.2vw;
 }
 
 #vault #right-side{
@@ -59,9 +105,16 @@ header ul li a{
 }
 
 #vault #right-side .card{
-	background-color: #002260;
-	padding:
+	background-color: #1d3b71;
+	padding:5vh 8vw;
+	transition:transform 0.5s;
+	border-radius:15px;
 }
+
+#vault #right-side .card:hover{
+	transform: scale(1.02);
+}
+
 
 
 
