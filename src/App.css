@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+	font-family:Arial;
 }
 
 body{
@@ -13,7 +14,7 @@ body{
 }
 
 .green{
-	color:rgb(0, 135, 0);
+	color:rgb(0, 255, 0);
 }
 
 header{
@@ -84,7 +85,7 @@ header ul li a:hover{
 }
 
 #vault #left-side #total-amount{
-	padding:2vh 2vw 1vh 2vw;
+	padding:2vh 2vw 2vh 2vw;
 	font-size:2.3vw;
 	font-weight: 600;
 }
@@ -99,6 +100,21 @@ header ul li a:hover{
 	font-size: 1.2vw;
 }
 
+.box-1{
+	background-color: rgba(0, 0, 0, 0.521);
+	display:inline-flex;
+	border-radius:15px;
+}
+
+.box-1 .balance-change-symbol{
+	border-right:2px solid aqua;
+	padding:5px 10px;
+}
+
+.box-1 .balance-change-amount{
+	padding:5px 10px;
+}
+
 #vault #right-side{
 	display:block;
 	width:70%;
@@ -106,7 +122,7 @@ header ul li a:hover{
 
 #vault #right-side .card{
 	background-color: #1d3b71;
-	padding:5vh 8vw;
+	padding:3vh 3vw 3vh 1.5vw;
 	transition:transform 0.5s;
 	border-radius:15px;
 }
@@ -115,8 +131,24 @@ header ul li a:hover{
 	transform: scale(1.02);
 }
 
+#vault #right-side .card .name-of-storage{
+	border-bottom: 2px solid rgb(0, 213, 255);
+	padding:0 0 1vh 1vw;
+}
 
+#vault #right-side .card .specific-amount{
+	font-size: 1.9vw;
+	font-weight:700;
+	padding: 1vh 0 1vh 1.5vw;
+	border-bottom: 2px solid rgb(0, 213, 255);
 
+}
 
+#vault #right-side .card .box-1{
+	margin:2vh 0 0 1.5vw;
+	font-size:1vw;
+}
 
-
+#vault #right-side .card .box-1 .balance-change-symbol{
+	border-right:2px solid rgba(0, 213, 255, 0.422)
+}
